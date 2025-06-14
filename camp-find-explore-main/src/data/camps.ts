@@ -1,0 +1,81 @@
+
+import { Camp, Room } from '@/types';
+
+export const camps: Camp[] = [
+  {
+    id: '1',
+    name: '山景露營區',
+    description: '位於山谷中的絕美露營地，享受大自然的寧靜與美景',
+    location: '台北市陽明山',
+    price: 1200,
+    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=500&h=300&fit=crop',
+    amenities: ['停車場', '衛浴設備', '烤肉區', '山景'],
+    rating: 4.8,
+  },
+  {
+    id: '2',
+    name: '湖畔度假村',
+    description: '坐落在湖邊的豪華露營體驗，適合全家大小',
+    location: '新竹縣尖石鄉',
+    price: 1800,
+    image: 'https://images.unsplash.com/photo-1571863533956-01c88e79957e?w=500&h=300&fit=crop',
+    amenities: ['湖景', '餐廳', '游泳池', 'WiFi'],
+    rating: 4.9,
+  },
+  {
+    id: '3',
+    name: '森林秘境',
+    description: '隱身在森林深處的神秘營地，享受最純淨的自然',
+    location: '南投縣仁愛鄉',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1533873984035-25970ab07461?w=500&h=300&fit=crop',
+    amenities: ['森林步道', '生態導覽', '營火晚會', '野生動物觀察'],
+    rating: 4.7,
+  },
+  {
+    id: '4',
+    name: '海邊星空營',
+    description: '面海的絕佳位置，夜晚可欣賞滿天繁星',
+    location: '花蓮縣七星潭',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1515408320194-59643816c5b2?w=500&h=300&fit=crop',
+    amenities: ['海景', '觀星台', '沙灘活動', '海鮮BBQ'],
+    rating: 4.6,
+  },
+];
+
+export const rooms: Room[] = [
+  {
+    id: '1-1',
+    campId: '1',
+    name: '山景豪華帳',
+    type: '豪華帳篷',
+    capacity: 4,
+    price: 1200,
+    amenities: ['冷氣', '獨立衛浴', '山景陽台', '迷你冰箱'],
+    available: true,
+    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=250&fit=crop',
+  },
+  {
+    id: '1-2',
+    campId: '1',
+    name: '標準露營位',
+    type: '露營位',
+    capacity: 6,
+    price: 800,
+    amenities: ['電源插座', '共用衛浴', '停車位'],
+    available: true,
+    image: 'https://images.unsplash.com/photo-1533873984035-25970ab07461?w=400&h=250&fit=crop',
+  },
+  {
+    id: '2-1',
+    campId: '2',
+    name: '湖景木屋',
+    type: '木屋',
+    capacity: 6,
+    price: 1800,
+    amenities: ['湖景', '廚房', '獨立衛浴', '陽台'],
+    available: true,
+    image: 'https://images.unsplash.com/photo-1571863533956-01c88e79957e?w=400&h=250&fit=crop',
+  },
+];
