@@ -64,7 +64,7 @@ const Booking = () => {
 
     // Simulate payment processing
     setTimeout(() => {
-      const success = Math.random() > 0.2; // 80% success rate for demo
+      const success = (paymentDetails.length == 16 || paymentDetails.length == 14);
       
       if (success) {
         // 儲存訂單資訊到使用者的訂單清單
