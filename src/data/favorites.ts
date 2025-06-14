@@ -1,0 +1,2 @@
+
+export const mockFavorites: string[] = [];
